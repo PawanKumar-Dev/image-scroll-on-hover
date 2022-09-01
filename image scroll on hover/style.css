@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  margin: 5px auto;
+}
+
+.your_frame {
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.your_frame img {
+  object-fit: cover;
+  width: 100%;
+
+  transform: translateY(0);
+  transition: 5s ease-out;
+}
+
+.your_frame:hover img {
+  object-fit: cover;
+  transform: translateY(calc(-100% + 400px));
+  transition: 5s ease-out;
+}
