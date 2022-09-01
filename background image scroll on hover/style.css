@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  margin: 5px auto;
+}
+
+.frame {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background: cover no-repeat;
+  background-image: url(https://source.unsplash.com/300x1500/);
+  transition: background-position 5s ease-out;
+}
+
+.frame:hover .background-image {
+  background-position: 0 100%;
+}
